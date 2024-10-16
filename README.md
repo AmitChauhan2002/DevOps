@@ -1,41 +1,44 @@
 # DevOps-CICD
 
-Documented the steps of how to set up a CI/CD pipeline for a simple Java project.
+This repository documents the steps to set up a CI/CD pipeline for a simple Java project, covering the entire process from Jenkins setup to deploying on Kubernetes.
 
-### Setting up Jenkins and plugins CI/CD pipeline
+## Setting up Jenkins and Plugins for the CI/CD Pipeline
 
-Go the Jenkins folder and follow the instructions in this order:
+Navigate to the `Jenkins` folder and follow the instructions in the specified order:
 
-Jenkins_Instructions:
+1. **Jenkins Instructions:**
+   - Set up an EC2 instance and install Java and Jenkins.
 
-- Create EC2 instance and install Java and Jenkins
+2. **Maven Instructions:**
+   - Install Maven to use as a build tool in the pipeline.
 
-Maven_Instructions
+3. **Git Instructions:**
+   - Install and integrate the Git plugin to enable automatic updates after each push.
 
-- Install Maven to use as a build tool in pipeline
+## Integrating a Tomcat Server
 
-Git_Instructions:
+- Navigate to the `Tomcat` folder and follow the instructions to integrate the Tomcat server.
 
-- Install and integrate Git plugin to implement automatic updates after each push r
+## Deploying into a Docker Container using Jenkins
 
-### Integrate Tomcat server
+- Go to the `Docker` folder and follow the provided instructions for deploying your application into a Docker container via Jenkins.
 
-Go to Tomcat folder and follow the instructions
+## Using Ansible to Automate Deployment into the Docker Container
 
-### Deploying into a Docker container using Jenkins
+- Navigate to the `Ansible` folder and follow the instructions to automate the deployment process with Ansible.
 
-Go to Docker folder and follow instructions
+## Replacing the Docker Host with Kubernetes
 
-### Using Ansible to automate deployment into Docker container
+- Navigate to the `Kubernetes` folder and follow the instructions for setting up Kubernetes.
 
-Go to Ansible folder and follow instructions
+1. **Kubernetes Instructions:**
+   - Set up Kubernetes on a new EC2 instance.
 
-### Replace Docker host with Kubernetes
+## Jenkins and Ansible Integration Instructions
 
-Go to Kubernetes folder and follow instructions
+- Follow the provided integration instructions for setting up Jenkins and Ansible for deployment.
 
-Kubernetes_Instructions:
+---
 
-- Set up Kubernetes on a new EC2 instance
+This guide provides step-by-step instructions to set up a robust CI/CD pipeline, leveraging various DevOps tools and platforms.
 
-Jenkins and Ansible Integration instructions
